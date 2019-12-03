@@ -1,0 +1,61 @@
+DATABASES
+
+1. RDBMS - Relational Database Mgt system
+2. SQL
+3. Data mining SQL
+4. PostgreSQL/mySQL/msSQL/Oracle
+5. 
+
+why learn databases:
+
+worksheets - excel
+workbook  - database
+worksheet  - tables/relations 
+columns - fields
+rows - records
+
+1. number of records limitation. excel can store approx. 1 million records.
+		mySQL allows for storing large strings of data, approx. 5 billion
+2. Avoid redundancy. in a database, a record/row can never appear more than once. Allows for normalization  
+3.
+
+**2 types of databases exist:
+
+1. SQL --structured querry language.
+		- has high integrity, and the data type is structured
+		- used to manipulate a database: Fetch, Insert, Update and delete data
+	RDBMS -- any system that uses SQL databases
+2. No SQL -- allows for unstructured data.\
+			- good for a general data analysis
+		
+	***Database schema - is a logical representation of your tables ina RDBMS
+	
+	primary key - it's a field/column in a table that uniquely represents a record.
+					e,g. student's registration no., a persons id
+				- mostly uses an auto-increament
+				- every table must contain a primary key.
+	Foreign key - is a field/column used to refer to a record from a parent table. 
+				- we usually use the primary key to reference the record.
+				
+		**Test case
+		Case for a bank:
+		
+		1.CBK --> list of banks --->
+		
+		2. Equity Bank:
+			Branches --> departments --> employees --> 
+			Branches --> customers--> accounts
+			customers--> contacts
+			typeAccount--> accounts
+			
+		1 NF - ist Normal Form has the most repetition
+		2 NF - 2nd Normal Form, has reduced repetition
+		3 NF - 3rd NormalForm, has the least repetitions
+		
+		***RELATIONSHIPS (Records)
+		One to many -- one record in the parent table relates to many records in the child
+		one to one -- one record in the parent relates/appears to only one record in the child
+		many to many -- it's a logical concept, cn never be represented in a real scenerio!!
+		
+		
+		

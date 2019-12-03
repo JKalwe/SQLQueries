@@ -1,0 +1,45 @@
+SQL QUERIES
+
+SELECT ProductName from products where productId=1
+
+
+
+SELECT * FROM Customers order by CustomerID desc
+
+WHERE Clause;
+The following SQL statement selects all the customers from the country "Mexico", in the "Customers" table:
+
+Example
+SELECT * FROM Customers
+WHERE Country='Mexico';
+
+
+2. Insert a record with your own details in the Customers table. NB: The PrimaryKey CustomerId has to be unique. 
+INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country)
+VALUES ('Kalwe J','jay jay','Erlangen 771','Erlangen','117','Germany');
+
+	SELECT * FROM Customers order by CustomerID desc (allows viewing of the entry)
+
+3. Insert an order for the Customer inserted in number 2 above.
+INSERT INTO Orders (CustomerID, EmployeeID, OrderDate, ShipperID) VALUES ('92', '1', '2019-12-03', '2')
+
+4. Insert a new record in the Products table attach them to an existing supplier.
+INSERT INTO Products (ProductName, SupplierID) VALUES ('MAANDAZI', '1')
+	SELECT * FROM Products order by ProductID desc (revereses the order)
+	
+5. Create an orderdetail using the order in 3 above and product in 4.
+orderID = 10444
+INSERT INTO OrderDetails (OrderID, ProductID, Quantity) VALUES ('10444','79','50')
+
+6. Delete Customer whose CustomerID is 56
+DELETE FROM Customers WHERE CustomerID='56';
+
+
+
+send me all notes to: val.valentine227@gmail.com
+noted
+thank you in advance
+any time
+looking forward to the project meeting
+me here
+sawa thanks
